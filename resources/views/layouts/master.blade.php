@@ -124,12 +124,12 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
                             <ul class="dropdown-menu">
-								<li><a href="{{ route('shop') }}">Sidebar Shop</a></li>
-								<li><a href="{{ route('shop-detail') }}">Shop Detail</a></li>
-                                <li><a href="{{ route('cart') }}">Cart</a></li>
-                                <li><a href="{{ route('checkout') }}">Checkout</a></li>
-                                <li><a href="{{ route('my-account') }}">My Account</a></li>
-                                <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
+								<li><a href="#">Sidebar Shop</a></li>
+								<li><a href="#">Shop Detail</a></li>
+                                <li><a href="#">Cart</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Wishlist</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
