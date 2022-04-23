@@ -13,22 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function() {
-    return view('index');
-})->name('index');
+Route::view('/', 'index')->name('index');
+Route::view('/about', 'about')->name('about');
+Route::view('/gallery', 'gallery')->name('gallery');
+Route::view('/contact-us', 'contact-us')->name('contact-us');
 
-Route::get('/about', function() {
-    return view('about');
-})->name('about');
+// Route::get('/', function() {
+//     return view('index');
+// })->name('index');
 
-Route::get('/gallery', function() {
-    return view('gallery');
-})->name('gallery');
+// Route::get('/about', function() {
+//     return view('about');
+// })->name('about');
 
-Route::get('/contact-us', function() {
-    return view('contact-us');
-})->name('contact-us');
+// Route::get('/gallery', function() {
+//     return view('gallery');
+// })->name('gallery');
+
+// Route::get('/contact-us', function() {
+//     return view('contact-us');
+// })->name('contact-us');
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
