@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index')->name('index');
+//Route::view('/', 'index')->name('index');
 Route::view('/about', 'about')->name('about');
 Route::view('/gallery', 'gallery')->name('gallery');
 Route::view('/contact-us', 'contact-us')->name('contact-us');
+Route::get('/', [PostController::class, 'index'])->name('index');
 
 // Route::get('/', function() {
 //     return view('index');
